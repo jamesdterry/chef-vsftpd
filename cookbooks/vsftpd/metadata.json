@@ -92,7 +92,8 @@
       "required": "optional",
       "calculated": false,
       "choice": [
-
+        "true",
+        "false"
       ],
       "default": "true",
       "type": "string",
@@ -100,11 +101,7 @@
         "vsftpd::default"
       ],
       "display_name": "vsftpd SSL Enabled",
-      "description": "If set, you must have the ssl public and private cert files in the cookbook’s files directory. Default: true.",
-      "choices": [
-        "true",
-        "false"
-      ]
+      "description": "If set, you must have the ssl public and private cert files in the cookbook’s files directory. Default: true."
     }
   },
   "license": "Apache License, Version 2.0",
