@@ -101,7 +101,7 @@
       ],
       "display_name": "vsftpd SSL Enabled",
       "description": "If set, you must have the ssl public and private cert files in the cookbook’s files directory. Default: true.",
-      "options": [
+      "choices": [
         "true",
         "false"
       ]

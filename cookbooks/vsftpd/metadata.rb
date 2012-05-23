@@ -51,7 +51,7 @@ attribute 'vsftpd/ssl_enabled',
   :description => "If set, you must have the ssl public and private cert files in the cookbook’s files directory. Default: true.",
   :type => "string",
   :default => "true",
-  :options => [ 'true', 'false' ],
+  :choices => [ 'true', 'false' ],
   :recipes => [ 'vsftpd::default' ]
 
 attribute 'vsftpd/use_ssl_certs_from_cookbook',
