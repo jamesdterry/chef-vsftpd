@@ -100,7 +100,7 @@
   "recommendations": {
   },
   "recipes": {
-    "vsftpd::default": "Install/configure vsftp FTP Server."
+    "vsftpd::default": "Install/configure vsftpd FTP Server."
   },
   "groupings": {
   },
