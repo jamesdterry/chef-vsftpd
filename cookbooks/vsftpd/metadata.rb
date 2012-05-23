@@ -54,9 +54,19 @@ attribute 'vsftpd/ssl_enabled',
   :choice => [ 'true', 'false' ],
   :recipes => [ 'vsftpd::default' ]
 
+attribute 'vsftpd/anonymous_enable',
+  :display_name => "vsftpd Anonymous Enabled",
+  :description => "To allow or not allow anonymous user connections. Default: false.",
+  :type => "string",
+  :default => "false",
+  :choice => [ 'true', 'false' ],
+  :recipes => [ 'vsftpd::default' ]
+
 attribute 'vsftpd/use_ssl_certs_from_cookbook',
   :display_name => "vsftpd Use SSL Certs from Cookbook",
   :description => "If set, you must have the ssl public and private cert files in the cookbook’s files directory. Default: true.",
   :type => "string",
   :default => "true",
   :recipes => [ 'vsftpd::default' ]
+  
+  

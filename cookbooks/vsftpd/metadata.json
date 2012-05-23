@@ -74,6 +74,21 @@
       "display_name": "vsftpd SSL Private Key Path",
       "description": "The pathname of the directory that the ssl private key file should live. Default: /etc/ssl/private."
     },
+    "vsftpd/anonymous_enable": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+        "true",
+        "false"
+      ],
+      "default": "false",
+      "type": "string",
+      "recipes": [
+        "vsftpd::default"
+      ],
+      "display_name": "vsftpd Anonymous Enabled",
+      "description": "To allow or not allow anonymous user connections. Default: false."
+    },
     "vsftpd/ssl_cert_path": {
       "required": "optional",
       "calculated": false,
