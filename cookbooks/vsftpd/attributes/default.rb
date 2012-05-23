@@ -45,7 +45,7 @@ default[:vsftpd][:chroot_list_enabled] = true
 default[:vsftpd][:chroot_users] = Array.new
 default[:vsftpd][:chroot_list_file] = "/etc/vsftpd.chroot_list"
 # SSL options
-default[:vsftpd][:ssl_enable] = true
+default[:vsftpd][:ssl_enabled] = true
 default[:vsftpd][:use_ssl_certs_from_cookbook] = true
 default[:vsftpd][:require_ssl_reuse] = false
 default[:vsftpd][:ssl_cert_path] = "/etc/ssl/certs"

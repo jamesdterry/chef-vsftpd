@@ -16,7 +16,7 @@ end
 
 directory "/etc/vsftpd.userconf"
 
-if node[:vsftpd][:use_ssl]
+if node[:vsftpd][:ssl_enabled]
   if node[:vsftpd][:use_ssl_certs_from_cookbook]
     cookbook_file "#{node[:vsftpd][:ssl_cert_path]}/#{node[:vsftpd][:ssl_certs_basename]}.pem" do
       owner 'root'

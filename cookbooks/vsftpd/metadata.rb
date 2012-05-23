@@ -43,7 +43,14 @@ attribute 'vsftpd/ssl_certs_basename',
   :display_name => "vsftpd SSL Certificate Base Name",
   :description => "Base name of the ssl cert PEM file and ssl private key filenames. Default: ‘ftp.example.com’ You will want it to be the FQDN of your host that you used to create the certs.",
   :type => "string",
-  :default => "ftp.example.com",
+  :default => nil,
+  :recipes => [ 'vsftpd::default' ]
+
+attribute 'vsftpd/ssl_enabled',
+  :display_name => "vsftpd SSL Enabled",
+  :description => "If set, you must have the ssl public and private cert files in the cookbook’s files directory. Default: true.",
+  :type => "string",
+  :default => "true",
   :recipes => [ 'vsftpd::default' ]
 
 attribute 'vsftpd/use_ssl_certs_from_cookbook',
