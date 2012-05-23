@@ -16,7 +16,7 @@ end
 
 directory "/etc/vsftpd.userconf"
 
-if node[:vsftpd][:ssl_enabled]  
+if node[:vsftpd][:ssl_enabled] or node[:vsftpd][:ssl_enabled].to_lower == 'true'
   log('Configuring for FTPS.') { level :debug }
 
   if node[:vsftpd][:use_ssl_certs_from_cookbook]
