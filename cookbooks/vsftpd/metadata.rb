@@ -13,7 +13,7 @@ attribute 'vsftpd/chroot_local_user',
   :choice => [ 'YES', 'NO' ],
   :type => "string",
   :required => "recommended",
-  :recipes => [ 'vsftp::default' ],
+  :recipes => [ 'vsftpd::default' ],
   :default => "YES"
 
 attribute 'vsftpd/chroot_users',
@@ -21,7 +21,7 @@ attribute 'vsftpd/chroot_users',
   :description => "Optional list of local usernames to be put in the chroot_list_file (/etc/vsftpd.chroot_list) file. Default: empty.",
   :type => "string",
   :required => "optional",
-  :recipes => [ 'vsftp::default' ]
+  :recipes => [ 'vsftpd::default' ]
 
 attribute 'vsftpd/ssl_cert_path',
   :display_name => "vsftpd SSL Certificate Path",
@@ -29,7 +29,7 @@ attribute 'vsftpd/ssl_cert_path',
   :type => "string",
   :default => "/etc/ssl/certs",
   :required => "optional",
-  :recipes => [ 'vsftp::default' ]
+  :recipes => [ 'vsftpd::default' ]
 
 attribute 'vsftpd/ssl_private_key_path',
   :display_name => "vsftpd SSL Private Key Path",
@@ -37,18 +37,18 @@ attribute 'vsftpd/ssl_private_key_path',
   :type => "string",
   :default => "/etc/ssl/private",
   :required => "optional",
-  :recipes => [ 'vsftp::default' ]
+  :recipes => [ 'vsftpd::default' ]
 
 attribute 'vsftpd/ssl_certs_basename',
   :display_name => "vsftpd SSL Certificate Base Name",
   :description => "Base name of the ssl cert PEM file and ssl private key filenames. Default: ‘ftp.example.com’ You will want it to be the FQDN of your host that you used to create the certs.",
   :type => "string",
   :default => "ftp.example.com",
-  :recipes => [ 'vsftp::default' ]
+  :recipes => [ 'vsftpd::default' ]
 
 attribute 'vsftpd/use_ssl_certs_from_cookbook',
   :display_name => "vsftpd Use SSL Certs from Cookbook",
   :description => "If set, you must have the ssl public and private cert files in the cookbook’s files directory. Default: true.",
   :type => "string",
   :default => "true",
-  :recipes => [ 'vsftp::default' ]
+  :recipes => [ 'vsftpd::default' ]
