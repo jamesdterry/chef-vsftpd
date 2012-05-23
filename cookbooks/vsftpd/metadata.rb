@@ -43,7 +43,7 @@ attribute 'vsftpd/ssl_certs_basename',
   :display_name => "vsftpd SSL Certificate Base Name",
   :description => "Base name of the ssl cert PEM file and ssl private key filenames. Default: ‘ftp.example.com’ You will want it to be the FQDN of your host that you used to create the certs.",
   :type => "string",
-  :default => nil,
+  :default => "ftp.example.com",
   :recipes => [ 'vsftpd::default' ]
 
 attribute 'vsftpd/ssl_enabled',

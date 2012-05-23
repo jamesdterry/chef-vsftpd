@@ -52,7 +52,7 @@
       "choice": [
 
       ],
-      "default": null,
+      "default": "ftp.example.com",
       "type": "string",
       "recipes": [
         "vsftpd::default"
