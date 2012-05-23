@@ -16,13 +16,11 @@ end
 
 directory "/etc/vsftpd.userconf"
 
-if node[:vsftpd][:ssl_enabled]
-  
-  log 'Configuring for FTPS.'
-  
+if node[:vsftpd][:ssl_enabled]  
+  log('Configuring for FTPS.') { level :debug }
+
   if node[:vsftpd][:use_ssl_certs_from_cookbook]
-    
-    log "Installing SSL certificate and key for #{node['vsftpd']['ssl_certs_basename']}."
+    log("Installing SSL certificate and key for #{node['vsftpd']['ssl_certs_basename']}.") { level :debug }
     
     cookbook_file "#{node[:vsftpd][:ssl_cert_path]}/#{node[:vsftpd][:ssl_certs_basename]}.pem" do
       owner 'root'
