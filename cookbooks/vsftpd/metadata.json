@@ -1,7 +1,7 @@
 {
   "dependencies": {
   },
-  "name": "chef-vsftpd/",
+  "name": "vsftpd",
   "maintainer_email": "rberger+maintainer@ibd.com",
   "attributes": {
     "vsftpd/chroot_users": {
@@ -100,7 +100,7 @@
   "recommendations": {
   },
   "recipes": {
-    "vsftp::default": "Install/configure vsftp FTP Server."
+    "vsftpd::default": "Install/configure vsftp FTP Server."
   },
   "groupings": {
   },

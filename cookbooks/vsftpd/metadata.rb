@@ -5,7 +5,7 @@ description      "Installs/Configures vsftpd for Secure SSL SFTP"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version          "0.0.2"
 
-recipe "vsftp::default", "Install/configure vsftp FTP Server."
+recipe "vsftpd::default", "Install/configure vsftp FTP Server."
 
 attribute 'vsftpd/chroot_local_user',
   :display_name => "vsftpd Chroot Local User",
