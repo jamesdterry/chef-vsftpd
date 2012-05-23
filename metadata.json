@@ -14,7 +14,7 @@
       "recipes": [
         "vsftp::default"
       ],
-      "display_name": "vsftpd Chroot Local User",
+      "display_name": "vsftpd Chroot Users",
       "description": "Optional list of local usernames to be put in the chroot_list_file (/etc/vsftpd.chroot_list) file. Default: empty."
     },
     "vsftpd/chroot_local_user": {

@@ -17,7 +17,7 @@ attribute 'vsftpd/chroot_local_user',
   :default => "YES"
 
 attribute 'vsftpd/chroot_users',
-  :display_name => "vsftpd Chroot Local User",
+  :display_name => "vsftpd Chroot Users",
   :description => "Optional list of local usernames to be put in the chroot_list_file (/etc/vsftpd.chroot_list) file. Default: empty.",
   :type => "string",
   :required => "optional",
